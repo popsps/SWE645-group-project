@@ -8,3 +8,5 @@ update 3
 update 4
 
 update 5 dockerhub check
+
+update 6 check pipline
