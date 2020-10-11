@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="swe645_hw1:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/swe645_hw1_war</output-path>
+    <root id="archive" name="swe645_hw1_war.war">
+      <element id="javaee-facet-resources" facet="swe645-hw1/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="swe645-hw1" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Survey</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="Materia.css">
+  <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
+  <a class="navbar-brand" href="https://www2.gmu.edu/"><img src="George_Mason_University_logo.svg" alt="gmu"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03"
+          aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarColor03">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="survey.html">Feedback</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="container py-5">
+  <form autocomplete="on" action="index.html" method="post">
+    <fieldset>
+      <legend>Your Feedback</legend>
+      <div class="form-group">
+        <div class="form-flex">
+          <label for="fname">
+            <div class="form-flex">
+              <i class="fa fa-asterisk" style="color: #b35555"></i>
+              <input type="text" id="fname" class="form-control"
+                     placeholder="First name" autofocus required>
+            </div>
+          </label>
+          <label for="lname">
+            <div class="form-flex">
+              <i class="fa fa-asterisk" style="color: #b35555"></i>
+              <input type="text" id="lname" class="form-control"
+                     placeholder="Last name" autofocus required>
+            </div>
+          </label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email">
+          <div class="form-flex">
+            <i class="fa fa-asterisk" style="color: #b35555"></i>
+            <input type="text" class="form-control" id="email"
+                   placeholder="email@example.com" required>
+          </div>
+        </label>
+      </div>
+      <div class="form-group">
+        <label style="width: 90%;">
+          <div class="form-flex">
+            <i class="fa fa-asterisk" style="color: #b35555"></i>
+            <input type="text" id="street" autocomplete="street-address" class="form-control"
+                   placeholder="street" required>
+          </div>
+        </label>
+      </div>
+      <div class="form-group">
+        <div class="form-flex">
+          <label>
+           <div class="form-flex">
+               <i class="fa fa-asterisk" style="color: #b35555"></i>
+               <input type="text" class="form-control" id="state"
+                      placeholder="State" required>
+           </div>
+          </label>
+          <label>
+            <div class="form-flex">
+                <i class="fa fa-asterisk" style="color: #b35555"></i>
+                <input type="text" class="form-control" id="city"
+                       placeholder="City" required>
+            </div>
+          </label>
+          <label>
+            <div class="form-flex">
+                <i class="fa fa-asterisk" style="color: #b35555"></i>
+                <input type="number" class="form-control" id="zip"
+                       placeholder="Zip" required>
+            </div>
+          </label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>
+          <div class="form-flex">
+            <i class="fa fa-asterisk" style="color: #b35555"></i>
+            <input type="text" class="form-control" id="phone"
+                   placeholder="Phone" required>
+          </div>
+        </label>
+      </div>
+      <div class="form-group">
+        <input type="url" class="form-control"
+               placeholder="URL">
+      </div>
+      <div class="form-group">
+        <div class="form-flex">
+          <i class="fa fa-asterisk" style="color: #b35555"></i>
+          <i>Date</i>
+          <input type="date" class="form-control"
+                 placeholder="Date" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <legend>When do you graduate from high-school?</legend>
+        <div class="form-flex">
+          <input class="form-control" list="months" placeholder="month">
+          <datalist id="months">
+            <option value="January">
+            <option value="February">
+            <option value="March">
+            <option value="April">
+            <option value="May">
+            <option value="June">
+            <option value="July">
+            <option value="August">
+            <option value="September">
+            <option value="October">
+            <option value="November">
+            <option value="December">
+          </datalist>
+          <input class="form-control" type="text" placeholder="year">
+        </div>
+      </div>
+      <div class="form-group">
+        <legend for="exampleSelect1">How likely would you be recommending George Mason to other prospective students?</legend>
+        <select class="form-control" id="exampleSelect1">
+          <option>Very Likely</option>
+          <option>Likely</option>
+          <option>Unlikely</option>
+        </select>
+      </div>
+      <fieldset class="form-group">
+        <legend>what did you like most about the campus?</legend>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox">
+            students
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox">
+            location
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox">
+            campus
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox">
+            atmosphere
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox">
+            dorm rooms
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox">
+            sports
+          </label>
+        </div>
+        <fieldset class="form-group">
+          <legend>How did you become interested in us?</legend>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1">
+              friends
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+              television
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3">
+              Internet
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios4" value="option4">
+              other
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="form-group">
+          <legend>By entering  atleast 10 comma seperated number between 1 through 100 in this Raffle box you will have a chance to win a free movie ticket.</legend>
+          <div class="form-check">
+            <label>
+              <input type="text" class="form-control" placeholder="1,34,3,100,55,56,23,67,98,4">
+            </label>
+          </div>
+        </fieldset>
+        <div class="form-group">
+          <textarea class="form-control" rows="3" placeholder="Comments"></textarea>
+        </div>
+        <div class="form-flex">
+          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" class="btn btn-primary">Cancel</button>
+        </div>
+      </fieldset>
+    </fieldset>
+  </form>
+
+</div>
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"
+                                     class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+</body>
+</html>

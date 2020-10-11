@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<title>Shayan Amirhosseini Home Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="Materia.css">
+<link rel="stylesheet" href="index.css"/>
+<body>
+
+<!--navbar-->
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
+  <a class="navbar-brand" href="https://www2.gmu.edu/"><img src="George_Mason_University_logo.svg" alt="gmu"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03"
+          aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarColor03">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="survey.html">Feedback</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2"
+     id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright"
+     style="padding:0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Portfolio</a>
+    <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
+  </div>
+</nav>
+
+
+<!-- Page Content -->
+<div class="container">
+  <!-- Menu icon to open sidebar -->
+  <div class="about heading">
+    <div class="me"></div>
+    <div class="text-center">
+      <h1 class="w3-jumbo "><b>Shayan Amirhosseini</b></h1>
+      <p>Graduate Student At George Mason University</p>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+    <img src="https://cs.gmu.edu/media//uploads/blog/default-image.jpg" class="w3-image w3-hide-small w3-round"
+         alt="camp"/>
+  </header>
+
+  <!-- About Section -->
+  <!--  CS department information-->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+    <h2>About CS Department</h2>
+    <hr class="w3-opacity">
+    <p>Welcome to the website of the Computer Science Department at George Mason University! With 50 faculty members,
+      the CS Department at Mason is the largest department in the Volgenau School of Engineering, one of the largest
+      departments on campus, and one of the largest CS departments in the Commonwealth of Virginia.</p>
+    <p>Today, not only are computing devices pervasive in society, but computational methods are used in almost every
+      field of endeavor ranging from the arts and humanities to the hard sciences and engineering. Given the importance
+      of computing in today's world, we strongly support the goal of "Computing for All", i.e., to providing a diverse
+      array of programs and courses in computing to students from all backgrounds and of all levels.</p>
+    <p>The department offers two Bachelor of Science programs with a total enrollment of over 1800 students: the B.S. in
+      Computer Science and the inter-disciplinary B.S. in Applied Computer Science; four M.S. programs in Computer
+      Science, Information Systems, Information Security and Assurance, and Software Engineering with a total enrollment
+      of 350 students; and a Ph.D. program in Computer Science with over 100 students. The department's faculty also
+      teach and participate in the inter-disciplinary M.S. in Data Analytics Engineering and the Ph.D. in Information
+      Technology offered by the Volgenau School of Engineering.</p>
+    <p>The department has a world-class faculty with research strengths in almost all areas of computing, and a strong
+      commitment to teaching. Our faculty are engaged in leading edge research in their respective fields and have
+      authored widely used textbooks and software. Our faculty's excellence is reflected in the list of awards received
+      for research (12 CAREER/Young Investigator awards, 7 Mason Emerging Researcher awards) and teaching (8 Mason
+      Excellence in Teaching awards).</p>
+    <p>The department has an active Industrial Advisory Board consisting of industry leaders -- many of whom are Mason
+      alumni - who help the department in building strong ties and engaging with alumni, local industry and government
+      agencies, and local K-12 schools. The members of the Advisory Board also provide the department with critical
+      guidance and feedback so that our courses and programs reflect the state of the art in computing technology, and
+      who help us with our goal of graduating students that are well prepared to meet the workforce needs of the state
+      and the nation. </p>
+
+
+  </div>
+  <div>
+    <div class="text-center h3">List of MS Degrees</div>
+    <ul>
+      <li>MS in Computer Science</li>
+      <li>MS in Information Systems</li>
+      <li>MS in Information Security and Assurance</li>
+      <li>MS in Software Engineering</li>
+    </ul>
+  </div>
+  <div>
+    <table class="table table-hover">
+      <div class="text-center h3">MS in Computer Science</div>
+      <thead>
+      <tr>
+        <th scope="col">Course Number</th>
+        <th scope="col">Course name</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr class="table-active">
+        <th scope="row">CS 583</th>
+        <td>Analysis of Algorithms</td>
+      </tr>
+      <tr>
+        <th scope="row">CS 531</th>
+        <td>Computer Systems and Fundamentals of Systems Programming</td>
+      </tr>
+      <tr class="table-active">
+        <th scope="row">CS 530</th>
+        <td>Mathematical Foundations of Computer Science</td>
+      </tr>
+      </tbody>
+    </table>
+    <table class="table table-hover">
+      <div class="text-center h3">MS in Software Engineering</div>
+      <thead>
+      <tr>
+        <th scope="col">Course Number</th>
+        <th scope="col">Course name</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr class="table-active">
+        <th scope="row">SWE 619</th>
+        <td>Object-Oriented Software Specification and Construction</td>
+      </tr>
+      <tr>
+        <th scope="row">SWE 621</th>
+        <td>Software Modeling and Architectural Design</td>
+      </tr>
+      <tr class="table-active">
+        <th scope="row">SWE 632</th>
+        <td>User Interface Design and Development</td>
+      </tr>
+      <tr>
+        <th scope="row">SWE 637</th>
+        <td>Software Testing</td>
+      </tr>
+      </tbody>
+    </table>
+    <table class="table table-hover">
+      <div class="text-center h3">MS in Information Systems</div>
+      <thead>
+      <tr>
+        <th scope="col">Course Number</th>
+        <th scope="col">Course name</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr class="table-active">
+        <th scope="row">CS 530</th>
+        <td>Mathematical Foundations of Computer Science</td>
+      </tr>
+      <tr>
+        <th scope="row">CS 550</th>
+        <td>Database Systems</td>
+      </tr>
+      <tr class="table-active">
+        <th scope="row">INFS 612</th>
+        <td>Principles and Practices of Communication Networks</td>
+      </tr>
+      <tr>
+        <th scope="row">INFS 622</th>
+        <td>Information Systems Analysis and Design</td>
+      </tr>
+      <tr class="table-active">
+        <th scope="row">INFS 740</th>
+        <td>Database Programming for the World Wide Web</td>
+      </tr>
+      </tbody>
+    </table>
+    <table class="table table-hover">
+      <div class="text-center h3">MS in Information Security and Assurance</div>
+      <thead>
+      <tr>
+        <th scope="col">Course Number</th>
+        <th scope="col">Course name</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr class="table-active">
+        <th scope="row">ISA 562</th>
+        <td>Information Security Theory and Practice</td>
+      </tr>
+      <tr>
+        <th scope="row">ISA 656</th>
+        <td>Network Security</td>
+      </tr>
+      <tr class="table-active">
+        <th scope="row">INFS 612</th>
+        <td>Principles and Practice of Communication Networks</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- END PAGE CONTENT -->
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"
+                                     class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+  // Open and close sidebar
+  function openNav() {
+    document.getElementById("mySidebar").style.width = "60%";
+    document.getElementById("mySidebar").style.display = "block";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidebar").style.display = "none";
+  }
+</script>
+
+</body>
+</html>
