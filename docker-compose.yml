@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  tomcat: 
+    image: 
+      shayhoss/swe645-group-project:latest
+    deploy:
+      replicas: 4
+    ports: 
+      - "8923:8080"
