@@ -185,6 +185,16 @@ docker service ps swe645-swarm_tomcat
 
 ![swarm-service](images/swarm-service-ls.jpg)
 
-And finally we can access the website using at http://ec2-3-235-74-211.compute-1.amazonaws.com:8923/swe645_hw_war/index.html.  
+And finally we can access the website using the public IP address of master or any of the workers.
 
+#### Master
 
+http://ec2-3-235-74-211.compute-1.amazonaws.com:8923/swe645_hw_war/index.html
+
+#### Worker1
+
+http://ec2-54-173-73-185.compute-1.amazonaws.com:8923/swe645_hw_war/index.html
+
+#### Worker2
+
+http://ec2-3-95-175-199.compute-1.amazonaws.com:8923/swe645_hw_war/index.html 
