@@ -39,8 +39,6 @@ sudo sh -c 'echo deb https://pkg.jenkins.io/debian-stable binary/ > \
     /etc/apt/sources.list.d/jenkins.list'
 sudo apt-get update
 sudo apt-get install jenkins
-# Add Jenkins to Docker group
-add jenkins to Docker user group
 # Start Jenkins
 sudo service jenkins start
 ```
@@ -169,7 +167,7 @@ Here is the summary of Jenkins project
 
 ![Jenkins-build](images/jenkins-build.jpg)
 
-After we configure the Jenkins we can push new changes to Github and it will build and image based on `Dockefile` then push it to the Ducker Hub. Finally we build 4 pods using `docker-compose.yml` we have provided.
+After we configure the Jenkins we can push new changes to Github and it will build an image based on `Dockefile` then push it to the Ducker Hub. Finally we build 4 pods using `docker-compose.yml` we have provided.
 
 ## Verification
 
