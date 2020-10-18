@@ -10,11 +10,13 @@ We use webhooks to facilitate our pipeline. Our webhook will send a push request
 
 ## Setting up Docker Hub
 
-For this project we needed a Docker Hub account. We publish our image into a public repository there. Here is the link to our public Docker repository: [shayhoss/swe645-group-project](https://hub.docker.com/r/shayhoss/swe645-group-project).
+For this project we need a Docker Hub account. We publish our image into a public repository there. Here is the link to our public Docker repository: [shayhoss/swe645-group-project](https://hub.docker.com/r/shayhoss/swe645-group-project).
 
 ## Setting up EC2 Instances
 
 We are setting up 3 Ubuntu EC2 instances. One will be the master and is a `t2.medium` instance. The other two will be workers and are `t2.micro` instances.
+
+![ec2-instances](images/ec2-instances.jpg)
 
 We will install Java, Jenkins and Docker for the master and Docker for worker nodes.
 
