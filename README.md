@@ -60,7 +60,7 @@ sudo usermod -aG docker ubuntu
 
 ### Security Group
 
-We open ports 80, 8080, 22 to be able to communicate with our instances. We also open up ports 2377, 7946, 4789, and 50 so Docker Swarm can function properly. Finally we open up port 8923 to expose it to the clients.
+Open up ports 80, 8080, 22 to be able to communicate with instances. Also open up ports 2377, 7946, 4789, and 50 so Docker Swarm can function properly. Finally, open port 8923 to expose it to the clients.
 
 ![security-group-swarm](images/security-group.jpg)
 
@@ -87,7 +87,7 @@ services:
       - "8923:8080"
 ```
 
-This will create 4 replicas of `shayhoss/swe645-group-project` which is a public image of the container built using our Dockerfile. It maps port 8080 to port 8923. That is because we are hosting Jenkins on port 8080.
+This will create 4 replicas of `shayhoss/swe645-group-project` which is a public image of the container we built using our Dockerfile. It maps port 8080 to port 8923. That is because we are hosting Jenkins on port 8080.
 
 ## Setting up the clusters Using Docker Swarm
 
@@ -103,7 +103,7 @@ This will generate a token that we can use in the workers to join this cluster.
 
 ### Setting up Workers
 
-So we get the token and issue
+So we get the token and join the cluster. e.g.
 
 ```sh
 # To add a worker to the cluster
@@ -165,15 +165,15 @@ Here is the summary of Jenkins project
 - Set GitHub hook trigger so that whenever new code is pushed to the GitHub and GitHub pushes those changes to the Jenkins, Jenkins will automatically issue a new build.
 - Build a war file based on the content of `web` directory
 - Create an Image based on the `Dockerfile` and push it to the `shayhoss/swe645-group-project` repository.
-- Create the cluster based on the `docker-compose.yml`.
+- Create a cluster based on the `docker-compose.yml`.
 
 ![Jenkins-build](images/jenkins-build.jpg)
 
-After we configure the Jenkins we can push new changes to Github and it will build and image based on `Dockefile` then push it to the Ducker Hub. Finally we build 4 pods using `docker-compose.yml`.
+After we configure the Jenkins we can push new changes to Github and it will build and image based on `Dockefile` then push it to the Ducker Hub. Finally we build 4 pods using `docker-compose.yml` we have provided.
 
 ## Verification
 
-Finally we need to check and verify that are instances are running and the replicas are created using `shayhoss/swe645-group-project` image. Issue following commands on the Master to verify the status of the cluster.
+Finally we need to check and verify that are instances are up and running and the replicas are created using `shayhoss/swe645-group-project` image. Issue following commands on the Master to verify the status of the cluster.
 
 ```sh
 # to check the status of the nodes(EC2 instances) in the cluster
@@ -187,7 +187,7 @@ docker service ps swe645-swarm_tomcat
 
 ![swarm-service](images/swarm-service-ls.jpg)
 
-And finally we can access the website using the public IP address of master or any of the workers.
+Access the website using the public IP address of master or any of the workers using port 8923.
 
 #### Master
 
