@@ -177,10 +177,14 @@ Finally we need to check and verify that are instances are running and the repli
 # to check the status of the nodes(EC2 instances) in the cluster
 docker node ls
 # 4 containers are created across 3 nodes using yaml file.
-# to check wether the service is created
+# to check whether the service is created
 docker service ls
 # pass the service name as parameter to check the status of the service
 docker service ps swe645-swarm_tomcat
 ```
 
 ![swarm-service](images/swarm-service-ls.jpg)
+
+And finally we can access the website using at http://ec2-3-235-74-211.compute-1.amazonaws.com:8923/swe645_hw_war/index.html.  
+
+
