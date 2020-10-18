@@ -2,8 +2,6 @@
 
 ## Setting up GitHub
 
----
-
 We use Github for hosting our application and providing version control. The public repository of our application can be found at [SWE645-group-project](https://github.com/popsps/SWE645-group-project).
 
 ### Webhook
@@ -12,13 +10,9 @@ We use webhooks to facilitate our pipeline. Our webhook will send a push request
 
 ## Setting up Docker Hub
 
----
-
 For this project we needed a Docker Hub account. We publish our image into a public repository there. Here is the link to our public Docker repository: [shayhoss/swe645-group-project](https://hub.docker.com/r/shayhoss/swe645-group-project).
 
 ## Setting up EC2 Instances
-
----
 
 We are setting up 3 Ubuntu EC2 instances. One will be the master and is a `t2.medium` instance. The other two will be workers and are `t2.micro` instances.
 
@@ -70,8 +64,6 @@ We open ports 80, 8080, 22 to be able to communicate with our instances. We also
 
 ## Image Configuration Using **Dockerfile**
 
----
-
 ```Dockerfile
 FROM tomcat:latest AS swe645-orch
 ADD out/swe645_hw_war.war  /usr/local/tomcat/webapps
@@ -81,8 +73,6 @@ EXPOSE 8080
 This will create a container using tomcat:latest. Then add the war file into `webapps` directory of the container. Finally it will expose port 8080.
 
 ## Container Orchestration Using **YAML**
-
----
 
 ```yml
 version: "3"
@@ -98,8 +88,6 @@ services:
 This will create 4 replicas of `shayhoss/swe645-group-project` which is a public image of the container built using our Dockerfile. It maps port 8080 to port 8923. That is because we are hosting Jenkins on port 8080.
 
 ## Setting up the clusters Using Docker Swarm
-
----
 
 ### Setting up the Master
 
@@ -131,8 +119,6 @@ in the master node to see and verify the status of all nodes in the cluster.
 ![swarm-init-master](images/swarm-init-master.jpg)
 
 ## Setting up The Automation Using Jenkins(CI/CD)
-
----
 
 ### Plugins
 
@@ -184,8 +170,6 @@ Here is the summary of Jenkins project
 After we configure the Jenkins we can push new changes to Github and it will build and image based on `Dockefile` then push it to the Ducker Hub. Finally we build 4 pods using `docker-compose.yml`.
 
 ## Verification
-
----
 
 Finally we need to check and verify that are instances are running and the replicas are created using `shayhoss/swe645-group-project` image. Issue following commands on the Master to verify the status of the cluster.
 
