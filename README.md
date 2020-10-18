@@ -87,12 +87,11 @@ This will create a container using tomcat:latest. Then add the war file into `we
 ```yml
 version: "3"
 services:
-  tomcat: 
-    image: 
-      shayhoss/swe645-group-project:latest
+  tomcat:
+    image: shayhoss/swe645-group-project:latest
     deploy:
       replicas: 4
-    ports: 
+    ports:
       - "8923:8080"
 ```
 
@@ -114,7 +113,7 @@ This will generate a token that we can use in the workers to join this cluster.
 
 ### Setting up Workers
 
-So we get the token and issue 
+So we get the token and issue
 
 ```sh
 # To add a worker to the cluster
@@ -183,3 +182,21 @@ Here is the summary of Jenkins project
 ![Jenkins-build](images/jenkins-build.jpg)
 
 After we configure the Jenkins we can push new changes to Github and it will build and image based on `Dockefile` then push it to the Ducker Hub. Finally we build 4 pods using `docker-compose.yml`.
+
+## Verification
+
+---
+
+Finally we need to check and verify that are instances are running and the replicas are created using `shayhoss/swe645-group-project` image. Issue following commands on the Master to verify the status of the cluster.
+
+```sh
+# to check the status of the nodes(EC2 instances) in the cluster
+docker node ls
+# 4 containers are created across 3 nodes using yaml file.
+# to check wether the service is created
+docker service ls
+# pass the service name as parameter to check the status of the service
+docker service ps swe645-swarm_tomcat
+```
+
+![swarm-service](images/swarm-service-ls.jpg)
