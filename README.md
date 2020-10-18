@@ -187,7 +187,7 @@ docker service ps swe645-swarm_tomcat
 
 ![swarm-service](images/swarm-service-ls.jpg)
 
-Access the website using at the public IP address(DNS) of master or any of the workers using port 8923.
+Access the website at the public IP address(DNS) of master or any of the workers using port 8923.
 
 #### Master
 
