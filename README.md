@@ -153,6 +153,8 @@ From the side bar select `new Item`. Create a `Free style project` and name it `
     - Register Credential: <dockerHub_Credential>
   - Execute shell
     ```sh
+    docker system prune
+    docker swarm prune
     # build the cluster using a YAML file
     docker stack deploy -c ./docker-compose.yml swe645-swarm
     ```
